@@ -156,12 +156,15 @@ $ source ~/.bashrc
 ```
 ## 4.6 First try out in RViz:
 ```bash
-$ roslaunch xarm_description xarm7_rviz_display.launch
+$ roslaunch xarm_description xarm6_rviz_display.launch
 ```
 
 ## 4.7 Run the demo in Gazebo simulator
    ```bash
-   $ roslaunch xarm_gazebo xarm7_beside_table.launch [run_demo:=true] [add_gripper:=true] [add_vacuum_gripper:=true] 
+   $ roslaunch xarm_gazebo xarm7_beside_table.launch [run_demo:=true] [add_gripper:=true] [add_vacuum_gripper:=true]
+   
+   $ roslaunch xarm_gazebo xarm7_beside_table.launch run_demo:=true add_gripper:=true
+
    ```
 &ensp;&ensp;Add the "run_demo" option if you wish to see a pre-programed loop motion in action. The command trajectory is written in xarm_controller\src\sample_motion.cpp. And the trajectory in this demo is controlled by pure position interface.   
 &ensp;&ensp;Add the "add_gripper" option if you want to see the xArm Gripper attached at the tool end.  
