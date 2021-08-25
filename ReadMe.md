@@ -209,25 +209,16 @@ Please note: xarm_moveit_config related packages will limit all joints within `[
    $ roslaunch xarm7_moveit_config demo.launch
    ```
 #### To run Moveit! motion planner along with Gazebo simulator:  
-   1. If no xArm gripper needed, first run:  
-   ```bash
-   $ roslaunch xarm_gazebo xarm7_beside_table.launch
-   ```
-   Then in another terminal:
-   ```bash
-   $ roslaunch xarm7_moveit_config xarm7_moveit_gazebo.launch
-   ```
+   
    2. If **xArm gripper needs to be attached**, first run:  
    ```bash
-   $ roslaunch xarm_gazebo xarm7_beside_table.launch add_gripper:=true
+   $ roslaunch xarm_gazebo xarm6_beside_table.launch add_gripper:=true
    ```
    Then in another terminal:
    ```bash
-   $ roslaunch xarm7_gripper_moveit_config xarm7_gripper_moveit_gazebo.launch
+   $ roslaunch xarm6_gripper_moveit_config xarm6_gripper_moveit_gazebo.launch
    ```
    If you have a satisfied motion planned in Moveit!, hit the "Execute" button and the virtual arm in Gazebo will execute the trajectory.   Moveit!에서 계획된 만족스러운 모션이 있는 경우 "실행" 버튼을 누르면 Gazebo의 가상 팔이 궤적을 실행합니다.
-
-   3. If **xArm vacuum gripper needs to be attached**, just replace "gripper" with "vacuum_gripper" in above gripper example.  경우 **xArm 진공 그립퍼가 부착 될 필요가** 단지 상기 그리퍼 예에서 "vacuum_gripper"와 "그리퍼"대체.
 
 #### To run Moveit! motion planner to control the real xArm:  
    First make sure the xArm and the controller box are powered on, then execute:  
@@ -245,12 +236,7 @@ Please note: xarm_moveit_config related packages will limit all joints within `[
    It is better to use this package with real xArm gripper, since Moveit planner will take the gripper into account for collision detection.  
    Moveit 플래너는 충돌 감지를 위해 그리퍼를 고려하므로 실제 xArm 그리퍼와 함께 이 패키지를 사용하는 것이 좋습니다
 
-#### To run Moveit! motion planner to control the real xArm with xArm Vacuum Gripper attached:  
-   First make sure the xArm and the controller box are powered on, then execute:  
-   ```bash
-   $ roslaunch xarm7_vacuum_gripper_moveit_config realMove_exec.launch robot_ip:=<your controller box LAN IP address>
-   ```
-   It is better to use this package with real xArm vacuum gripper, since Moveit planner will take the vacuum gripper into account for collision detection.  
+ 
 
 ## 5.5.1 Add custom tool model for Moveit Moveit용 커스텀 도구 모델 추가
 &ensp;&ensp;***This part may require ROS Melodic or later versions to function well***  
