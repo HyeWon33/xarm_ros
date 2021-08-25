@@ -219,6 +219,10 @@ Please note: xarm_moveit_config related packages will limit all joints within `[
    $ roslaunch xarm6_gripper_moveit_config xarm6_gripper_moveit_gazebo.launch
    ```
    If you have a satisfied motion planned in Moveit!, hit the "Execute" button and the virtual arm in Gazebo will execute the trajectory.   Moveit!에서 계획된 만족스러운 모션이 있는 경우 "실행" 버튼을 누르면 Gazebo의 가상 팔이 궤적을 실행합니다.
+   
+   
+   위에 두 문장 실행시키면 rviz에서 작동시키면 gazebo에서 볼 수 있다.
+   
 
 #### To run Moveit! motion planner to control the real xArm:  
    First make sure the xArm and the controller box are powered on, then execute:  
