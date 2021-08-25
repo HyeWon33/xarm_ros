@@ -189,7 +189,7 @@ $ roslaunch xarm_description xarm6_rviz_display.launch
 ## 5.3 xarm_controller
    &ensp;&ensp;Controller configurations, hardware_interface, robot command executable source, scripts and launch files. User can deploy their program inside this package or create their own. ***Note that*** effort controllers defined in xarm_controller/config are just examples for simulation purpose, when controlling the real arm, only 'position_controllers/JointTrajectoryController' interface is provided. User can add their self-defined controllers as well, refer to: http://wiki.ros.org/ros_control (controllers)
    
-     컨트롤러 구성, hardware_interface, 로봇 명령 실행 가능 소스, 스크립트 및 실행 파일. 사용자는 이 패키지 안에 프로그램을 배포하거나 직접 만들 수 있습니다. ***참고*** 노력 컨트롤러가 실제 암을 제어 할 때 xarm_controller / 설정이 시뮬레이션 목적을 위해 단지 예, 오직 'position_controllers이 / JointTrajectoryController'인터페이스가 제공하는 정의. 사용자는 자체 정의 컨트롤러도 추가할 수 있습니다. http://wiki.ros.org/ros_control (컨트롤러)를 참조하십시오.
+     컨트롤러 구성, hardware_interface, 로봇 명령 실행 가능 소스, 스크립트 및 실행 파일. 사용자는 이 패키지 안에 프로그램을 배포하거나 직접 만들 수 있습니다. ***참고*** xarm_controller/config에 정의된 작업 제어기는 시뮬레이션 목적으로만 사용되며, 실제 암을 제어할 때는 'position_controller/JointTractoryController' 인터페이스만 제공됩니다. 사용자는 자체 정의 컨트롤러도 추가할 수 있습니다. http://wiki.ros.org/ros_control (컨트롤러)를 참조하십시오.
 
 ## 5.4 xarm_bringup  
 &ensp;&ensp;launch files to load xarm driver to enable direct control of real xArm hardware.  
