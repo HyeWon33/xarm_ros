@@ -235,7 +235,7 @@ Please note: xarm_moveit_config related packages will limit all joints within `[
 #### To run Moveit! motion planner to control the real xArm with xArm Gripper attached:  Moveit을 실행하려면! xArm 그리퍼가 부착된 실제 xArm을 제어하는 모션 플래너:
    First make sure the xArm and the controller box are powered on, then execute:  먼저 xArm과 컨트롤러 상자의 전원이 켜져 있는지 확인한 다음 다음을 실행합니다.
    ```bash
-   $ roslaunch xarm7_gripper_moveit_config realMove_exec.launch robot_ip:=<your controller box LAN IP address>
+   $ roslaunch xarm5_gripper_moveit_config realMove_exec.launch robot_ip:=192.168.1.210
    ```
    It is better to use this package with real xArm gripper, since Moveit planner will take the gripper into account for collision detection.  
    Moveit 플래너는 충돌 감지를 위해 그리퍼를 고려하므로 실제 xArm 그리퍼와 함께 이 패키지를 사용하는 것이 좋습니다
